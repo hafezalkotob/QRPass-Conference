@@ -16,7 +16,7 @@ $qrPath = "assets/qr/{$user['uuid']}.png";
         <div class="col-md-6">
             <div class="card shadow">
                 <div class="card-body text-center">
-                    <h1 class="h4 mt-2 mb-4">بلیت ورود به همایش</h1>
+                    <h1 class="h4 mt-2 mb-4">کارت ورود به همایش</h1>
                     <div class="mb-4">
                         <img src="<?=htmlspecialchars($qrPath)?>" alt="QR Code" class="img-fluid" style="max-width: 256px;">
                     </div>

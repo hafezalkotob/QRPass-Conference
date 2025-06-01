@@ -2,7 +2,7 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="utf-8">
-<title>کِیوسک حضور همایش</title>
+<title>کِیوسک حضور در همایش</title>
 <style>
 body{font-family:tahoma;text-align:center;background:#181818;color:#fff}
 #msg{font-size:2rem;margin-top:20vh}
@@ -12,7 +12,7 @@ input{opacity:0;position:absolute}
 </style>
 </head>
 <body>
-<h1>لطفاً بلیت خود را اسکن کنید</h1>
+<h1>لطفاً بارکد کارت ورود خود را اسکن کنید</h1>
 <div id="msg">...</div>
 <input id="scanner" autofocus>
 <script>
@@ -55,7 +55,7 @@ function flash(text, cls){
   msg.className   = cls;
   document.body.style.background = (cls==='success')?'#003300':'#330000';
   setTimeout(() => {
-    msg.textContent = 'لطفاً بلیت خود را اسکن کنید';
+    msg.textContent = 'لطفاً کارت ورود خود را اسکن کنید';
     msg.className = '';
     document.body.style.background = '#181818';
   }, 3000);

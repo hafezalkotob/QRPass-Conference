@@ -50,7 +50,7 @@ generate_qr($ticketUrl, $qrPath);
 class MYPDF extends TCPDF {
     public function Header() {
         $this->SetFont('dejavusans', 'B', 20);
-        $this->Cell(0, 15, 'بلیت همایش', 0, true, 'C', 0);
+        $this->Cell(0, 15, 'کارت ورود همایش', 0, true, 'C', 0);
         $this->Ln(10);
     }
 }
@@ -58,7 +58,7 @@ class MYPDF extends TCPDF {
 $pdf = new MYPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
 $pdf->SetCreator(PDF_CREATOR);
 $pdf->SetAuthor('Ditasia');
-$pdf->SetTitle('بلیت همایش');
+$pdf->SetTitle('کارت ورود همایش');
 
 $pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE, PDF_HEADER_STRING);
 $pdf->setHeaderFont(Array('dejavusans', '', PDF_FONT_SIZE_MAIN));
@@ -113,9 +113,9 @@ sms_pattern_send($_POST['mobile'], SMS_PATTERN_ID, [
 // send Email if provided
 if (!empty($_POST['email'])) {
     $body = "<p>سلام {$_POST['first_name']} عزیز،</p>
-        <p>برای دریافت بلیت خود روی لینک زیر کلیک کنید:</p>
-        <p><a href=\"{$ticketUrl}\">مشاهده بلیت</a></p>";
-    send_ticket_email($_POST['email'], 'بلیت همایش', $body);
+        <p>برای دریافت کارت ورود خود روی لینک زیر کلیک کنید:</p>
+        <p><a href=\"{$ticketUrl}\">مشاهده کارت ورود</a></p>";
+    send_ticket_email($_POST['email'], 'کارت ورود همایش', $body);
 }
 
 ?>
@@ -128,10 +128,10 @@ if (!empty($_POST['email'])) {
                     <i class="bi bi-check-circle-fill text-success" style="font-size: 4rem;"></i>
                     <h2 class="mt-4 mb-3 text-success">ثبت‌نام موفق</h2>
                     <p class="lead mb-4">ثبت‌نام شما با موفقیت انجام شد.</p>
-                    <p class="text-muted">لینک بلیت برای شما ارسال شد.</p>
+                    <p class="text-muted">لینک کارت ورود برای شما ارسال شد.</p>
                     <div class="mt-4">
                         <a href="assets/tickets/<?php echo $uuid; ?>.pdf" class="btn btn-primary" download>
-                            <i class="bi bi-download"></i> دانلود بلیت
+                            <i class="bi bi-download"></i> دانلود کارت ورود
                         </a>
                         <a href="index.php" class="btn btn-outline-secondary ms-2">بازگشت به صفحه اصلی</a>
                     </div>

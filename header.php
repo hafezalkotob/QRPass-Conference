@@ -18,20 +18,20 @@
         /* تنظیمات فونت ایران‌سنس */
         @font-face {
             font-family: 'iransansxv';
-            src: url('<?php echo $base_url; ?>/assets/fonts/IRANSansXV.woff') format('woff-variations'),
-                 url('<?php echo $base_url; ?>/assets/fonts/IRANSansXV.woff') format('woff');
+            src: url('assets/fonts/IRANSansXV.woff') format('woff-variations'),
+                 url('assets/fonts/IRANSansXV.woff') format('woff');
             font-weight: 100 1000;
             font-display: fallback;
         }
 
         @font-face {
             font-family: 'iransansx';
-            src: url('<?php echo $base_url; ?>/assets/fonts/IRANSansX-Regular.woff') format('woff');
+            src: url('assets/fonts/IRANSansX-Regular.woff') format('woff');
         }
 
         @font-face {
             font-family: 'iransansx';
-            src: url('a<?php echo $base_url; ?>/assets/fonts/IRANSansX-Bold.woff') format('woff');
+            src: url('assets/fonts/IRANSansX-Bold.woff') format('woff');
             font-weight: 700;
         }
 

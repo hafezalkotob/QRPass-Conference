@@ -7,8 +7,9 @@ require_once 'header.php';
         <div class="card shadow-sm">
             <div class="card-body">
                 <div class="text-center mt-2 mb-5">
-                    <img src="assets/logo.svg" alt="DIT Logo" class="img-fluid mb-3" style="max-height: 100px;">
-                    <h2 class="h4">دومین نمایشگاه فناوری زیبایی DIT</h2>
+                    <img src="assets/ditasia-logotype.svg" alt="DIT Logo" class="img-fluid mb-4" style="max-height: 160px;">
+                    <h1 class="h4">دومین نشست تخصصی «نوآوری در زیبایی DIT»</h1>
+                    <p class="small">پیوند بین پژوهش‌های ضدپیری، راهکارهای مراقبتی در برابر آفتاب و تحولات بازار مصرف</p>
                 </div>
                 
                 <?php if(isset($_GET['err'])): ?>
@@ -79,7 +80,7 @@ require_once 'header.php';
                     </div>
 
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary">ثبت درخواست</button>
+                        <button type="submit" class="btn btn-primary px-4">ثبت‌نام</button>
                     </div>
                 </form>
             </div>

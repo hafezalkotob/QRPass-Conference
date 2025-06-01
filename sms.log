@@ -1,0 +1,16 @@
+2025-06-01 16:26:17 SMS Error:
+Mobile: 09199111185
+Pattern: 353088
+Data: {"name":"پارسا","family":"شیرازی","link":"0eb7fe45e3"}
+Response: false
+HTTP Code: 0
+CURL Error: Could not resolve host: api.sms.ir
+-------------------
+2025-06-01 16:29:05 SMS Error:
+Mobile: 09199111185
+Pattern: 353088
+Data: {"name":"پارسا","family":"شیرازی","link":"4d7cc51055"}
+Response: false
+HTTP Code: 0
+CURL Error: SSL certificate problem: unable to get local issuer certificate
+-------------------
