@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => '__root__',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'a1bdda8a6f471f64f971e324f2e2f5260890d6f2',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'a1bdda8a6f471f64f971e324f2e2f5260890d6f2',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -97,6 +97,15 @@
             'reference' => '0cc9dd0f17f61d8131e7df6b84bd344899fe2608',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/polyfill-php80',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'tecnickcom/tcpdf' => array(
+            'pretty_version' => '6.10.0',
+            'version' => '6.10.0.0',
+            'reference' => 'ca5b6de294512145db96bcbc94e61696599c391d',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../tecnickcom/tcpdf',
             'aliases' => array(),
             'dev_requirement' => false,
         ),

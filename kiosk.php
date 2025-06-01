@@ -29,7 +29,7 @@ input.addEventListener('keydown', e => {
   input.value = '';               // خالی‌کردن برای اسکن بعدی
 
   /* استخراج uuid از هر چیزی که خوانده شده */
-  const match = text.match(/[0-9a-f]{32}/i);
+  const match = text.match(/[0-9a-f]{10}/i);
   if(!match){
     flash('کد پیدا نشد', 'error');
     return;
